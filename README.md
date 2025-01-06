@@ -5,7 +5,6 @@ Features:
 	•	Randomly generated sequences for each round
 	•	Increasing difficulty as you progress
 	•	User-friendly interface
-	•	Interactive sound and visuals (if applicable)
 	•	Replay and reset options
 
 Feel free to contribute or suggest improvements! 😊
