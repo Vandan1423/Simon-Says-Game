@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.main{
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 40px;
+    background-color: inherit;
+}
+
+.controlButtons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.controlButtons button{
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 3px solid black;
+}
+
+.controlButtons button:hover{
+    transform: scale(1.05,1.05);
+    background-color: rgb(96, 96, 96);
+    cursor: pointer;
+}
+
+.cardContainer{
+    height: 600px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 20%;
+}
+.card{
+    width: 25%;
+    height: 25%;
+    border: 6px solid black;
+    position: absolute;
+    border-radius: 40%;
+}
+.red{
+    top: 15%;
+    left: 5%;
+    background-color: rgba(255, 0, 0,0.7);
+}
+.green{
+    top: 5%;
+    left: 37.5%;
+    background-color: rgb(0, 128, 0,0.7);
+}
+.yellow{
+    top: 15%;
+    right: 5%;
+    background-color: rgba(255, 255, 0,0.7);
+}
+.pink{
+    bottom: 15%;
+    left: 5%;
+    background-color: rgba(255, 192, 203,0.7);
+}
+.plum{
+    bottom: 5%;
+    left: 37.5%;
+    background-color: rgba(221, 160, 221,0.7);
+}
+.aqua{
+    bottom: 15%;
+    right: 5%;
+    background-color: rgba(0, 255, 255,0.7);
+}
+.centerCard{
+    width: 30%;
+    height: 30%;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 34.3%;
+    left: 35%;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerCard h3{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@keyframes blink{
+    from{
+        background-color: (--var);
+    }50%{
+        background-color: white;
+    }to{
+        background-color: (--var);
+    }
+}
+.blinkCard{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 3;
+    animation-direction: normal;
+}
+.hidden{
+    display: none;
+}
+/* Add the animation for flashing red background */
+@keyframes flashRed {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: bisque; /* Original background color */
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+/* Class to apply the red flash animation */
+.red-bg {
+    animation: flashRed 1s ease-out 1;
+}
