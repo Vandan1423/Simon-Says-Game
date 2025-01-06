@@ -1,5 +1,5 @@
 Description:
-A fun and interactive “Simon Says” game built using Javascript. This game challenges players to remember and replicate an increasingly complex sequence of colors, sounds, or actions. Perfect for practicing memory skills and having fun!
+A fun and interactive “Simon Says” game built using Javascript. This game challenges players to remember and replicate an increasingly complex sequence of colors. Perfect for practicing memory skills and having fun!
 
 Features:
 	•	Randomly generated sequences for each round
