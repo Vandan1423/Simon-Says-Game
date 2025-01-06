@@ -11,5 +11,5 @@ Feel free to contribute or suggest improvements! 😊
 
 Usage Instructions:
 	1.	Clone the repository.
-	2.	Follow the setup instructions in the README.
+	2.	Open index.html.
 	3.	Enjoy playing Simon Says!
